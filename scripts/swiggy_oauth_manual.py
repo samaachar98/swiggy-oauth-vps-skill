@@ -19,7 +19,11 @@ import time
 from pathlib import Path
 from urllib.parse import parse_qs, urlencode, urlparse
 
-import requests
+try:
+    import requests
+except ImportError:
+    print("Missing dependency: requests. Install with: pip install -r requirements.txt", file=sys.stderr)
+    raise
 
 AUTH_BASE = "https://mcp.swiggy.com/auth"
 DEFAULT_CLIENT_ID = "swiggy-mcp"

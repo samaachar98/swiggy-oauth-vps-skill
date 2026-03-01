@@ -14,6 +14,8 @@ This skill is designed for cases where:
 - `SKILL.md` — skill instructions for agent usage
 - `scripts/swiggy_oauth_manual.py` — PKCE helper script
 - `references/token-ops.md` — operational runbook for token rotation
+- `requirements.txt` — Python dependencies
+- `install.sh` — one-shot local setup script
 
 ---
 
@@ -25,6 +27,14 @@ This skill is designed for cases where:
 4. Exchange for tokens immediately
 
 ---
+
+## Quick setup
+
+```bash
+chmod +x install.sh
+./install.sh
+source .venv/bin/activate
+```
 
 ## Recommended command (interactive)
 

@@ -15,6 +15,14 @@ Use this skill to recover or rotate Swiggy MCP tokens from a headless server.
 4. Exchange code for tokens on VPS.
 5. Save token securely and verify MCP access.
 
+## Setup
+
+```bash
+chmod +x install.sh
+./install.sh
+source .venv/bin/activate
+```
+
 ## Use Scripted Flow (preferred)
 
 Run either:
